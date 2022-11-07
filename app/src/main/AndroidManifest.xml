@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.oldageparadise">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,13 +16,18 @@
         android:theme="@style/Theme.Oldageparadise"
         tools:targetApi="31">
         <activity
+            android:name=".NoNeedPhychiatrist"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultPhysiatrist"
+            android:exported="false" />
+        <activity
             android:name=".MedicalForm"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,9 +44,11 @@
         <activity
             android:name=".SignUpActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            >
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MentalHealthCare"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

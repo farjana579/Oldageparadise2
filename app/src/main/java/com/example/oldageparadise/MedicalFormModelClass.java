@@ -4,7 +4,8 @@ public class MedicalFormModelClass {
 
 
 
-    private String name, email, contact, address, age, weight, startDate, endDate;
+    private String name, email, contact, address, age, weight, startDate, endDate,Bathing,Feeding,
+            nursing,Assistance,Physiotherahy ;
 
     public String getName() {
         return name;
@@ -21,7 +22,7 @@ public class MedicalFormModelClass {
     public String getAge() {
         return age;
     }
-   /* public String getWeight() {
+   public String getWeight() {
         return weight;
     }
     public String getStartDate() {
@@ -29,7 +30,23 @@ public class MedicalFormModelClass {
     }
     public String getEndDate() {
         return endDate;
-    }*/
+    }
+    public String getBathing() {
+        return Bathing;
+    }
+    public String getFeeding() {
+        return Feeding;
+    }
+    public String getNursing() {
+        return nursing;
+    }
+    public String getAssistance() {
+        return Assistance;
+    }
+    public String getPhysiotherahy() {
+        return Physiotherahy;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -54,10 +71,28 @@ public class MedicalFormModelClass {
     public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
+    public void setBathing(String bathing) {
+        Bathing = bathing;
+    }
+    public void setFeeding(String feeding) {
+        Feeding = feeding;
+    }
+    public void setNursing(String nursing) {
+        this.nursing = nursing;
+    }
+    public void setAssistance(String assistance) {
+        Assistance = assistance;
+    }
 
+
+
+    public void setPhysiotherahy(String physiotherahy) {
+        Physiotherahy = physiotherahy;
+    }
 
     public MedicalFormModelClass(String name, String email, String contact, String address , String age
-    ,String weight, String startDate, String endDate) {
+    , String weight, String startDate, String endDate, String Bathing, String Feeding, String nursing
+    , String Assistance, String Physiotherahy ) {
         this.name = name;
         this.email = email;
         this.contact = contact;
@@ -66,6 +101,11 @@ public class MedicalFormModelClass {
         this.weight = weight;
         this.startDate = startDate;
         this.endDate= endDate;
+        this.Bathing = Bathing;
+        this.Feeding = Feeding;
+        this.nursing = nursing;
+        this.Assistance = Assistance;
+        this.Physiotherahy = Physiotherahy;
     }
 
 }

@@ -95,7 +95,7 @@ public class LogInActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     //no need to come this activity again
                    finish();
-                    Intent intent = new Intent(getApplicationContext(),MedicalForm.class);
+                    Intent intent = new Intent(getApplicationContext(),MentalHealthCare.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(), "Login succesful", Toast.LENGTH_LONG).show();
